@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .main__text {
+        background-image: var(--gradient);
+        -webkit-text-fill-color: transparent;
+        @apply bg-clip-text font-extrabold
+    }
+
+    .nav-li {
+        @apply  mx-[0.35rem] opacity-70 hover:opacity-100 transition cursor-pointer text-white;
+    }
+
+    .nav-li.active {
+        @apply opacity-100;
+    }
+}
